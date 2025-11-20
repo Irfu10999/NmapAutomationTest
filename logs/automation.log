@@ -1,0 +1,28 @@
+2025-11-20 11:16:10 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Admin\eclipse-workspace\NmapAutomationTest\master.xml
+
+2025-11-20 11:16:23 INFO  Tc01_AccountLogin:16 - *********** Starting TC01_verifying_Login_test_WIth_Valid_Credentials ***********
+2025-11-20 11:16:23 INFO  Tc01_AccountLogin:20 - *********** Entering Login Data  ***********
+2025-11-20 11:16:23 INFO  Tc01_AccountLogin:24 - *********** Clicked on SignIn  ***********
+2025-11-20 11:16:25 INFO  Tc01_AccountLogin:33 - *********** Finished TC_01_verifying_Login_test_WIth_Valid_Credentials ***********
+2025-11-20 11:42:02 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Admin\eclipse-workspace\NmapAutomationTest\master.xml
+
+2025-11-20 11:42:13 INFO  Tc02_PunchIn:15 - *********** Starting TC02_verifying_PunchIn  ***********
+2025-11-20 11:42:13 INFO  Tc02_PunchIn:19 - *********** Entering Login Data  ***********
+2025-11-20 11:42:13 INFO  Tc02_PunchIn:21 - *********** Logged In  ***********
+2025-11-20 11:42:26 INFO  Tc02_PunchIn:28 - *********** Checking Punch In Button status ***********
+2025-11-20 11:42:26 INFO  Tc02_PunchIn:29 - Punch In Button Enabled: true
+2025-11-20 11:55:18 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Admin\eclipse-workspace\NmapAutomationTest\master.xml
+
+2025-11-20 11:55:29 INFO  Tc03AddCustomer:16 - *********** Starting TC03_Adding the Customer ***********
+2025-11-20 11:55:29 INFO  Tc03AddCustomer:20 - *********** Entering Login Data  ***********
+2025-11-20 11:55:30 INFO  Tc03AddCustomer:22 - *********** Logged In  ***********
+2025-11-20 11:56:55 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\Admin\eclipse-workspace\NmapAutomationTest\master.xml
+
+2025-11-20 11:57:07 INFO  Tc03AddCustomer:16 - *********** Starting TC03_Adding the Customer ***********
+2025-11-20 11:57:07 INFO  Tc03AddCustomer:20 - *********** Entering Login Data  ***********
+2025-11-20 11:57:08 INFO  Tc03AddCustomer:22 - *********** Logged In  ***********
+2025-11-20 11:57:14 INFO  Tc03AddCustomer:34 - *********** Finished TTC03_Adding the Customer ***********
