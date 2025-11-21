@@ -23,18 +23,7 @@ public class LoginPage extends BasePage
 	@FindBy(xpath = ".//button[@id='kt_login_signin_submit']")
 	WebElement btnSignIn;
 	
-	/*
-	@FindBy(xpath = "")
-	WebElement
-	
-	@FindBy(xpath = "")
-	WebElement
-	
-	
-	@FindBy(xpath = "")
-	WebElement
-	*/
-	
+
 	
 	public void enterEmailId(String email) 
 	{

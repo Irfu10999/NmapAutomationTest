@@ -19,19 +19,40 @@
 							"});\r",
 							"if (resp.token) {\r",
 							"  pm.environment.set(\"token\", resp.token);\r",
-							"}"
+							"}\r",
+							"\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"userid\": \"{{userid}}\",\r\n  \"password\": \"{{password}}\"\r\n}",
+					"raw": "{\r\n    \"userid\": \"9519519519\",\r\n    \"password\": \"12345678\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -39,13 +60,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/auth/login",
+					"raw": "{{base_url}}/api/account/authenticate",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
-						"auth",
-						"login"
+						"api",
+						"account",
+						"authenticate"
 					]
 				}
 			},
@@ -68,7 +90,8 @@
 							""
 						],
 						"type": "text/javascript",
-						"packages": {}
+						"packages": {},
+						"requests": {}
 					}
 				}
 			],
@@ -96,13 +119,66 @@
 					}
 				},
 				"url": {
-					"raw": "{{base_url}}/auth/login",
+					"raw": "{{base_url}}/api/account/authenticate",
 					"host": [
 						"{{base_url}}"
 					],
 					"path": [
-						"auth",
-						"login"
+						"api",
+						"account",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "BEIl3UXaY_2RJ_PXLLrU0dntu_TVTeHDET5BrrTCcSUtlvqtbZdfQkiKHPw58VNBLf0Z0x2GyYOYekEIzZL6GYWP58dwhtTRHUVT1M1NWf7lNjGuuNpxGNkm",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer BEIl3UXaY_2RJ_PXLLrU0dntu_TVTeHDET5BrrTCcSUtlvqtbZdfQkiKHPw58VNBLf0Z0x2GyYOYekEIzZL6GYWP58dwhtTRHUVT1M1NWf7lNjGuuNpxGNkm",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"LeadName\": \"Aman Enterprises\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testffc.nimapinfotech.com/api/CRM/AddLead",
+					"protocol": "https",
+					"host": [
+						"testffc",
+						"nimapinfotech",
+						"com"
+					],
+					"path": [
+						"api",
+						"CRM",
+						"AddLead"
 					]
 				}
 			},
